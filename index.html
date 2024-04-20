@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/443c01c12d.js" crossorigin="anonymous"></script>
+    <title>SHREE</title>
+    <link rel="icon" type="image/x-icon" href="Logo7.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span>Satadhar Suppliers</span>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <!-- <a href="#" class="action_btn">Get Started</a> -->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="#" class="action_btn">Get Started</a></li> -->
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome To Our <span>Digital Platform</span></h1>
+            <p>Shree Satadhar Suppliers <br>Welcomes you to our Website.</p>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen ?
+                'fa-solid fa-xmark' :
+                'fa-solid fa-bars'
+        }
+    </script>
+    <footer>
+        &copy;Fenil Prajapati-2024
+    </footer>
+</body>
+
+</html>
